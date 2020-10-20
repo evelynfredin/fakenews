@@ -30,17 +30,24 @@
 </nav>
 
 <!-- DATE -->
-<section>
-	<p>Today is Monday 19 October, 2020</p>
+<section class="top-module">
+	<div class="date">
+		<p>Today is Monday 19 October, 2020</p>
+		<p class="breaking">Breaking: Winter is comming!</p>
+	</div>
 </section>
 
 <!-- News Categories -->
-<section>
-	<ul>
-		<li>iOS</li>
-		<li>Android</li>
-		<li>Xbox</li>
-		<li>PlayStation</li>
-		<li>Nintendo</li>
-	</ul>
+<section class="categories">
+	<div class="categories-list">
+		<ul>
+			<li>Tech</li>
+			<li>Reviews</li>
+			<li>Science</li>
+			<li>Creators</li>
+			<li>Entertainment</li>
+			<li>Videos</li>
+			<li>Podcasts</li>
+		</ul>
+	</div>
 </section>

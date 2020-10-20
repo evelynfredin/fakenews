@@ -18,8 +18,12 @@ body {
     font-size: 16px;
   }
 
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
+
+}
+
+@media (min-width: 1210px) {
+	.container {
+		max-width: 1200px;
+		margin: auto;
   }
 }
