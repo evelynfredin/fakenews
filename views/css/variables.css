@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #050402;
+        --body-color: #fff;
+        --primary-color: #da2839;
+        --body-inverse: #000;
+        --bg-inverse: #fff;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;
+        --body-color: #000;
+        --primary-color: #da2839;
+        --body-inverse: #fff;
+        --bg-inverse: #000;
+    }
+  }

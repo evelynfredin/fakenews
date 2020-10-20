@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +28,7 @@ nav ul.open li {
   text-decoration: none;
   padding: 1rem;
   border-bottom: 1px solid #dd5a5a;
-  background: #da2839;
+  background: var(--primary-color);
   width: 100%;
   align-items: center;
 }
@@ -75,9 +77,16 @@ nav ul.open li a {
   
   nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--body-color);
     text-transform: uppercase;
     font-weight: 700;
+  }
+
+  nav ul li a:hover {
+	color: var(--primary-color);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-ransition: all 0.3s ease;
   }
 
   .hamburger {
