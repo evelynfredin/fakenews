@@ -14,4 +14,11 @@ class QueryBuilder
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
+
+    public function selectPublic($table, $row)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM {$table} WHERE {$row} = TRUE");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
 }

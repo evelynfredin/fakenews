@@ -5,7 +5,9 @@ require __DIR__ . '/views/header.php';
 
 
 foreach ($posts as $post) {
-    echo $post->content;
+    if ($post->published) {
+        echo $post->content;
+    }
 }
 
 require __DIR__ . '/views/footer.php';

@@ -8,5 +8,6 @@ $query = new QueryBuilder(
     Connection::make($config['db_path'])
 );
 
-// Retrieves * rows from the 'database'
+// Calls the Querybuilder
 $posts = $query->selectAll('posts');
+$published = $query->selectPublic('posts', 'published');
