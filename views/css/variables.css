@@ -1,3 +1,5 @@
+/* For the night owls
+   ========================================================================== */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #050402;
@@ -6,9 +8,11 @@
         --body-inverse: #000;
         --bg-inverse: #fff;
     }
-  }
-  
-  @media (prefers-color-scheme: light) {
+}
+
+/* For the daytime workaholics
+   ========================================================================== */
+@media (prefers-color-scheme: light) {
     :root {
         --bg-color: #fff;
         --body-color: #000;
@@ -16,4 +20,4 @@
         --body-inverse: #fff;
         --bg-inverse: #000;
     }
-  }
+}
