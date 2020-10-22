@@ -29,7 +29,7 @@
     </ul>
 </nav>
 
-<!-- DATE -->
+<!-- Today's Date -->
 <section class="top-module">
     <div class="date">
         <p><?php echo date('l\, F jS\, Y'); ?></p>

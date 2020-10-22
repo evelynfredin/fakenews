@@ -10,4 +10,7 @@ $query = new QueryBuilder(
 
 // Calls the Querybuilder
 $posts = $query->selectAll('posts');
-$published = $query->selectPublic('posts', 'published');
+$users = $query->selectAll('users');
+$topStories = $query->selectOrderAndLimit('posts', 'likes', '2');
+$footerStories = $query->selectOrderAndLimit('posts', 'likes', '5');
+$postsByDate = $query->selectOrderAndLimit('posts', 'date', 6);

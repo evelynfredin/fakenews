@@ -15,9 +15,9 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function selectPublic($table, $row)
+    public function selectOrderAndLimit($table, $column, $amount)
     {
-        $statement = $this->pdo->prepare("SELECT * FROM {$table} WHERE {$row} = TRUE");
+        $statement = $this->pdo->prepare("SELECT * FROM {$table} ORDER BY {$column} DESC LIMIT {$amount}");
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }

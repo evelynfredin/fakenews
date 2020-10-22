@@ -1,0 +1,53 @@
+footer {
+    background: #000;
+    margin-top: 3rem;
+    border-top: 5px solid red;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-links div {
+    margin-top: 2rem;
+}
+
+.footer-links h3 {
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0.5rem 1rem 0;
+    line-height: 2rem;
+}
+
+.footer-links li {
+    border-bottom: 1px solid #202020;
+    padding: 0.5rem 0;
+}
+
+.footer-links li:last-child {
+    border-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+/* Tablets
+   ========================================================================== */
+@media (min-width: 822px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+}
