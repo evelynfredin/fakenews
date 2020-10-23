@@ -68,7 +68,8 @@ span {
     font-size: 0.9rem;
 }
 
-.fa-heart:hover {
+.fa-heart:hover,
+.fa-heart:active {
     color: var(--primary-color);
 }
 
@@ -83,7 +84,7 @@ p {
 
 /* Tablets
    ========================================================================== */
-@media (min-width: 1100px) {
+@media (min-width: 822px) {
     .grid-item p,
     .top-item p {
         letter-spacing: 0.06rem;

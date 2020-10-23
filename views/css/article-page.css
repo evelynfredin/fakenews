@@ -27,7 +27,7 @@
 
 .article-sidebar {
     margin-top: 2rem;
-    border-top: 5px solid #dadada;
+    border-top: 5px solid var(--lighter-gray-color);
 }
 
 .social {
@@ -40,7 +40,7 @@
 .fa-facebook,
 .fa-twitter,
 .fa-whatsapp {
-    color: rgb(151, 158, 165);
+    color: var(--lighter-gray-color);
 }
 
 .fa-facebook:hover,
@@ -58,7 +58,7 @@
 
     .article-sidebar {
         margin-top: 0;
-        border-left: 1px solid #dadada;
+        border-left: 1px solid var(--lighter-gray-color);
     }
 
     .article-sidebar .sidebar-body {
