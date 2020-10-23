@@ -1,0 +1,67 @@
+.article-header {
+    margin-top: 2rem;
+}
+
+.article-body span {
+    margin: 0;
+}
+
+.article-body .title {
+    margin: 1rem 0 0.5rem;
+}
+
+.article-body .metadata {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-body .article-content {
+    margin-top: 2rem;
+}
+
+.article-sidebar {
+    margin-top: 2rem;
+    border-top: 5px solid #dadada;
+}
+
+.social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-whatsapp {
+    color: rgb(151, 158, 165);
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover {
+    color: var(--primary-color);
+}
+
+@media (min-width: 1000px) {
+    .article {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .article-sidebar {
+        margin-top: 0;
+        border-left: 1px solid #dadada;
+    }
+
+    .article-sidebar .sidebar-body {
+        padding-left: 2rem;
+    }
+}

@@ -13,7 +13,9 @@
             <h3><i class="fas fa-newspaper"></i> Top Articles</h3>
             <ul>
                 <?php foreach ($footerStories as $footerStory) : ?>
-                    <li><?= $footerStory->title; ?></li>
+                    <a href="article.php?id=<?= $footerStory->id; ?>">
+                        <li><?= $footerStory->title; ?></li>
+                    </a>
                 <?php endforeach; ?>
             </ul>
         </div>

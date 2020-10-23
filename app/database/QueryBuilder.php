@@ -21,4 +21,11 @@ class QueryBuilder
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
+
+    public function selectById($id)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM posts WHERE id = {$id};");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_CLASS)[0];
+    }
 }

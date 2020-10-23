@@ -8,7 +8,7 @@
 
 .top-item {
     padding: 1rem;
-    border-left: var(--primary-color) 10px solid;
+    border-left: 10px solid rgb(207, 207, 207);
     background: rgba(161, 161, 161, 0.2);
 }
 
@@ -48,15 +48,13 @@
     padding: 0.5rem 0;
 }
 
-.grid-item .publishedDate,
-.top-item .publishedDate {
+.publishedDate {
     color: rgb(177, 176, 176);
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-.grid-item span,
-.top-item span {
+span {
     background: var(--primary-color);
     color: #fff;
     padding: 0 0.5rem;
@@ -66,8 +64,7 @@
     text-transform: uppercase;
 }
 
-.grid-item .author-likes,
-.top-item .author-likes {
+.author-likes {
     font-size: 0.9rem;
 }
 
@@ -75,13 +72,11 @@
     color: var(--primary-color);
 }
 
-.grid-item h3,
-.top-item h3 {
+h3 {
     margin-top: 1rem;
 }
 
-.grid-item p,
-.top-item p {
+p {
     letter-spacing: 0.06rem;
     line-height: 1.8rem;
 }
