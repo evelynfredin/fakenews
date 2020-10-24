@@ -37,6 +37,11 @@
     margin-bottom: 1rem;
 }
 
+.grid-item img:hover,
+.top-item img:hover {
+    opacity: 0.8;
+}
+
 .grid-item div,
 .top-item div {
     display: flex;
@@ -44,12 +49,18 @@
     align-items: center;
 }
 
+.grid-item a,
+.top-item a {
+    text-decoration: none;
+    color: var(--body-color);
+}
+
 .top-item div {
     padding: 0.5rem 0;
 }
 
 .publishedDate {
-    color: rgb(177, 176, 176);
+    color: var(--light-gray-color);
     font-size: 0.9rem;
     font-weight: 700;
 }
@@ -68,28 +79,13 @@ span {
     font-size: 0.9rem;
 }
 
-.fa-heart:hover,
-.fa-heart:active {
+.fa-heart:hover {
     color: var(--primary-color);
-}
-
-h3 {
-    margin-top: 1rem;
-}
-
-p {
-    letter-spacing: 0.06rem;
-    line-height: 1.8rem;
 }
 
 /* Tablets
    ========================================================================== */
 @media (min-width: 822px) {
-    .grid-item p,
-    .top-item p {
-        letter-spacing: 0.06rem;
-        line-height: 1.4rem;
-    }
     .top-stories {
         grid-template-columns: 2fr 1fr;
     }

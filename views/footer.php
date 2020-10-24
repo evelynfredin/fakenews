@@ -25,8 +25,8 @@
         <div>
             <h3><i class="fas fa-bookmark"></i> Categories</h3>
             <ul>
-                <?php foreach ($posts as $post) : ?>
-                    <li><?= $post->category; ?></li>
+                <?php foreach ($categories as $name) : ?>
+                    <li><?= $name->category; ?></li>
                 <?php endforeach; ?>
             </ul>
         </div>

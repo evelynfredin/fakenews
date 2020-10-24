@@ -50,7 +50,8 @@
                         <?= excerpt($topStory); ?>
                     </p>
                 </article>
-            <?php endif; ?>
-        <?php endforeach; ?>
+        <?php
+            endif;
+        endforeach; ?>
     </section>
 </div>

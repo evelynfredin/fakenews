@@ -16,6 +16,8 @@
         --body-color: #ffffff;
         --body-inverse: #000000;
         --bg-inverse: #ffffff;
+        --categories-nav: #979ea6;
+        --text-hover: rgb(199, 199, 199);
     }
 }
 
@@ -27,5 +29,7 @@
         --body-color: #000000;
         --body-inverse: #ffffff;
         --bg-inverse: #000000;
+        --categories-nav: #e6e6e6;
+        --text-hover: rgb(85, 85, 85);
     }
 }
