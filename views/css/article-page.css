@@ -11,7 +11,7 @@ h1 {
     line-height: 3rem;
 }
 
-.article-body .metadata {
+.metadata {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
@@ -41,6 +41,11 @@ h1 {
     color: grey;
 }
 
+h4 {
+    text-decoration: none;
+    color: var(--body-color);
+}
+
 .social {
     margin: 1rem 0;
     display: flex;
@@ -58,6 +63,11 @@ h1 {
 .fa-twitter:hover,
 .fa-whatsapp:hover {
     color: var(--primary-color);
+}
+
+.divider {
+    margin: 2rem 0;
+    border: 1px solid var(--lighter-gray-color);
 }
 
 @media (min-width: 1000px) {

@@ -33,3 +33,10 @@ function excerpt(stdClass $post): string
         return $new;
     }
 }
+
+
+// Gets the image path for the article picture
+function imgPath(string $name): string
+{
+    return '/uploads/' . $name;
+}

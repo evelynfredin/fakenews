@@ -25,8 +25,8 @@
     </button>
     <ul class="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="#">Breaking News</a></li>
-        <li><a href="#">Top Stories</a></li>
+        <li><a href="breaking.php">Breaking News</a></li>
+        <li><a href="top.php">Top Stories</a></li>
         <li><a href="#">Authors</a></li>
     </ul>
 </nav>

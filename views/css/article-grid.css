@@ -37,11 +37,6 @@
     margin-bottom: 1rem;
 }
 
-.grid-item img:hover,
-.top-item img:hover {
-    opacity: 0.8;
-}
-
 .grid-item div,
 .top-item div {
     display: flex;

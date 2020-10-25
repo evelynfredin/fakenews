@@ -22,6 +22,7 @@ footer {
 .footer-links h3 {
     text-transform: uppercase;
     color: #fff;
+    margin: 4rem 0 1rem;
 }
 
 .footer-links ul {
@@ -63,5 +64,8 @@ footer p {
         justify-content: space-between;
         padding: 1rem;
         margin: 2rem auto;
+    }
+    .footer-links h3 {
+        margin: 1rem 0 1rem;
     }
 }
