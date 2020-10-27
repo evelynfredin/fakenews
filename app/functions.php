@@ -21,22 +21,15 @@ function getAuthorForPost(stdClass $post, array $users): string
 // Creates an excerpt from the article's content
 function excerpt(stdClass $post): string
 {
-    if (strlen($post->content) < 200) {
-        return $post->content;
-    } else {
-
-        $new = wordwrap($post->content, 198);
-        $new = explode("\n", $new);
-
-        $new = $new[0] . '...';
-
-        return $new;
-    }
+    $new = wordwrap($post->content, 198);
+    $new = explode("\n", $new);
+    $new = $new[0] . '...';
+    return $new;
 }
 
 
 // Gets the image path for the article picture
 function imgPath(string $name): string
 {
-    return '/uploads/' . $name;
+    return '/views/uploads/' . $name;
 }

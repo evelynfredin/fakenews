@@ -12,10 +12,10 @@
         <div>
             <h3><i class="fas fa-newspaper"></i> Top Articles</h3>
             <ul>
-                <?php foreach ($footerStories as $footerStory) : ?>
+                <?php foreach ($footerPosts as $post) : ?>
                     <li>
-                        <a href="article.php?id=<?= $footerStory->id; ?>">
-                            <?= $footerStory->title; ?>
+                        <a href="article.php?id=<?= $post->id; ?>">
+                            <?= $post->title; ?>
                         </a>
                     </li>
                 <?php endforeach; ?>
@@ -25,15 +25,16 @@
         <div>
             <h3><i class="fas fa-bookmark"></i> Categories</h3>
             <ul>
-                <?php foreach ($categories as $name) : ?>
-                    <li><?= $name->category; ?></li>
+                <?php foreach ($categories as $category) : ?>
+                    <li><?= $category->name; ?></li>
                 <?php endforeach; ?>
             </ul>
         </div>
     </div>
     <div>
         <hr>
-        <p>Fake News | Joke's On You</p>
+        <p>Fake News<br />
+            All lyrics by Haken © <?= date('Y'); ?>.</p>
     </div>
 </footer>
 <script src="views/javascript/script.js"></script>

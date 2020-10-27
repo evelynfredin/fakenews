@@ -1,6 +1,6 @@
 <div class="container">
     <section class="grid">
-        <?php foreach ($breakingStories as $post) :
+        <?php foreach ($breakingPosts as $post) :
             if ($post->published) : ?>
                 <article class="grid-item">
                     <a href="article.php?id=<?= $post->id; ?>">

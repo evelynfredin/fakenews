@@ -27,8 +27,7 @@ h1 {
 }
 
 .article-content p {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1.5rem 0;
 }
 
 .article-sidebar {

@@ -1,6 +1,8 @@
 <?php
 
+// Require system files
 require __DIR__ . '/app/bootstrap.php';
+require __DIR__ . '/app/functions.php';
 
 // Grab the article ID using GET to then show all data related to that ID
 $id = (int) $_GET['id'];
@@ -15,10 +17,8 @@ $pageTitle = $article->title;
 // Requiere template files
 require __DIR__ . '/views/header.php';
 require __DIR__ . '/views/navigation.php';
-require __DIR__ . '/app/functions.php';
 
-
-
+// Require the contents of the home page
 require __DIR__ . '/views/article.views.php';
 
 // Requiere footer

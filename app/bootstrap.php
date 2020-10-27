@@ -14,9 +14,9 @@ $users = $query->selectAll('users');
 $categories = $query->selectAll('categories');
 
 // Ordered by Likes Descending and with a Limit
-$topStories = $query->selectOrderAndLimit('posts', 'likes', 2);
-$footerStories = $query->selectOrderAndLimit('posts', 'likes', 5);
+$topPosts = $query->selectOrderAndLimit('posts', 'likes', 2);
+$footerPosts = $query->selectOrderAndLimit('posts', 'likes', 5);
 
 // Ordered by Date Descending and with a Limit
 $postsByDate = $query->selectOrderAndLimit('posts', 'date', 6);
-$breakingStories = $query->selectOrderAndLimit('posts', 'date', 12);
+$breakingPosts = $query->selectOrderAndLimit('posts', 'date', 12);

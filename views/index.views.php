@@ -1,6 +1,6 @@
 <div class="container">
     <section class="top-stories">
-        <?php foreach ($topStories as $post) : ?>
+        <?php foreach ($topPosts as $post) : ?>
             <div class="top-item">
                 <a href="article.php?id=<?= $post->id; ?>">
                     <img src="<?= imgPath($post->image) ?>" alt="<?= $post->title; ?>" />
