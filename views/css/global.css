@@ -52,6 +52,29 @@ a img:hover {
     margin: 0 auto;
 }
 
+h1.not-found {
+    color: var(--primary-color);
+    font-size: 9rem;
+    text-align: center;
+}
+
+p.not-found {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid red;
+    margin: 2rem 0;
+}
+
+.not-found a {
+    color: var(--light-gray-color);
+}
+
+.not-found a:hover {
+    color: var(--text-hover);
+}
+
 /* Tablets
    ========================================================================== */
 @media (min-width: 822px) {

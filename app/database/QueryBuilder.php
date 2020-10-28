@@ -22,11 +22,11 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function selectById(int $id): object
+    public function selectById(int $id)
     {
         $statement = $this->pdo->prepare("SELECT * FROM posts WHERE id = {$id}");
         $statement->execute();
-        return $statement->fetchObject();
+        return $statement->fetchAll(PDO::FETCH_CLASS)[0];
     }
 
     public function excludeActivePost(int $id): array
