@@ -1,4 +1,4 @@
-<?php $topStories = $query->selectOrderAndLimit('posts', 'likes', 12); ?>
+<?php $topStories = $query->sortBy('posts', 'likes', 12); ?>
 
 <div class="container">
     <section class="grid">

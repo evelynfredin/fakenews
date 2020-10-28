@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="views/css/footer.css" />
     <link rel="stylesheet" href="views/css/normalize.css" />
     <script src="https://kit.fontawesome.com/e803257d30.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="views/assets/favicon.svg" />
+
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="The F is for Freedom" />
+    <meta property="og:description" content="Fake News website for the Fake News lovers" />
+    <meta property="og:image" content="views/assets/img.png" />
+
 </head>
 
 <body>

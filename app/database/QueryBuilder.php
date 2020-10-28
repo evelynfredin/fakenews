@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 class QueryBuilder
 {
     protected $pdo;
@@ -15,18 +17,24 @@ class QueryBuilder
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function selectOrderAndLimit(string $table, string $column, int $amount): array
+    public function sortBy(string $table, string $column, int $limit): array
     {
-        $statement = $this->pdo->prepare("SELECT * FROM {$table} ORDER BY {$column} DESC LIMIT {$amount}");
+        $statement = $this->pdo->prepare("SELECT * FROM {$table} ORDER BY {$column} DESC LIMIT {$limit}");
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function selectById(int $id)
+    public function selectById(int $id): object
     {
         $statement = $this->pdo->prepare("SELECT * FROM posts WHERE id = {$id}");
         $statement->execute();
-        return $statement->fetchAll(PDO::FETCH_CLASS)[0];
+        $result = $statement->fetchObject();
+
+        if (!$result) {
+            $result = new stdClass;
+        }
+
+        return $result;
     }
 
     public function excludeActivePost(int $id): array

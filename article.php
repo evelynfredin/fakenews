@@ -11,10 +11,10 @@ if (isset($_GET['id'])) {
 
 
 $article = $query->selectById($id);
-
 if (!$article->id) {
     header('Location: 404.php');
 }
+
 
 // Suggests posts with the same category, excluding the Active Post
 $suggested = $query->excludeActivePost($id);
