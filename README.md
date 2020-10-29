@@ -33,7 +33,7 @@ The challenge was to create a Fake News website that had 5 different authors and
         $ brew install sqlite
     ```
     
-2. Get a local server running
+2. Clone this repo
 ``` 
     git clone https://github.com/evelynfredin/fakenews.git
 ```
