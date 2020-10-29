@@ -63,7 +63,7 @@ p.not-found {
 }
 
 hr {
-    border: 1px solid red;
+    border: 1px solid var(--primary-color);
     margin: 2rem 0;
 }
 

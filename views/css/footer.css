@@ -56,6 +56,11 @@ footer p {
     letter-spacing: 0.2rem;
 }
 
+hr.hr-footer {
+    border: 1px solid var(--lighter-gray-color);
+    margin: 1rem auto;
+}
+
 /* Tablets
    ========================================================================== */
 @media (min-width: 822px) {

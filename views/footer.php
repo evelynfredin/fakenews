@@ -32,7 +32,7 @@
         </div>
     </div>
     <div>
-        <hr>
+        <hr class="hr-footer container">
         <p>Fake News<br />
             All lyrics by Haken © <?= date('Y'); ?>.</p>
     </div>

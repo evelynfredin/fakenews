@@ -20,20 +20,31 @@ The challenge was to create a Fake News website that had 5 different authors and
 
 
 ## To Run This Code On Your Machine
-1. Clone this repository
+1. Install PHP-SQLite3
+    * On Windows (Ubuntu)
+    ```
+        sudo apt-get install php-sqlite3
+    ```
+    * On macOS (With Brew)
+    ```
+        $ brew install sqlite
+    ```
+    
+2. Get a local server running
 ``` 
     git clone https://github.com/evelynfredin/fakenews.git
 ```
-2. Navigate to the right directory `$ cd /path/to/directory/`  
-3. Get a local server running
+3. Navigate to the right directory `$ cd /path/to/directory/`
+
+4. Get a local server running:
 ````
     php -S localhost:8000
 ````
-4. Enjoy of some good 'ol fake news which technically are just some of Haken's lyrics.
+5. Enjoy of some good 'ol fake news which technically are just some of Haken's lyrics.
 
 ## Testing Done By
-* To be determined
-* To be determined
+* [Martin Hansson](https://github.com/Alegherix)
+* [Jakob Gustafsson](https://github.com/gusjak)
 
 ## License
 MIT License
