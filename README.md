@@ -22,7 +22,7 @@ The challenge was to create a Fake News website that had 5 different authors and
 -   404 page to catch unexistent IDs
 
 ## To Run This Code On Your Machine
-<<<<<<< HEAD
+
 1. Install PHP-SQLite3
     * On Windows (Ubuntu)
     ```
@@ -48,28 +48,6 @@ The challenge was to create a Fake News website that had 5 different authors and
 ## Testing Done By
 * [Martin Hansson](https://github.com/Alegherix)
 * [Jakob Gustafsson](https://github.com/gusjak)
-=======
-
-1. Clone this repository
-
-```
-    git clone https://github.com/evelynfredin/fakenews.git
-```
-
-2. Navigate to the right directory `$ cd /path/to/directory/`
-3. Get a local server running
-
-```
-    php -S localhost:8000
-```
-
-4. Enjoy of some good 'ol fake news which technically are just some of Haken's lyrics.
-
-## Testing Done By
-
--   To be determined
--   To be determined
->>>>>>> 0be722fbea0fae61804572913450e9c9bbf8b44b
 
 ## License
 
