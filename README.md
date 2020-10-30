@@ -59,8 +59,15 @@ Evelyn Fredin
 
 ## Code Review
 
-(Martin) Review:
+#### (Gilda) Review:
+1. The newsfeed looks really professional with a great layout and design. It seems to be very well thought out, both visually and structurally.
+2. `article.views.php:36` - alt tags seem to be empty once you click on an article, but they exist on the images on the home page. 
+3. `breaking.views.php:7` - the alt tag contains the title of the article, though it would increase the page's accessibility if there was a description of the image instead.
+4. `navigation.php:30` - the href tag in the Authors link is empty so it doesn't lead anywhere.
+5. `navigation.php:46-52` - the list items doesn't contain any links, though they give the impression of being clickable links when visiting the page.
 
+
+#### (Martin) Review:
 1. Super clean layout - Great contrast on entire site, well made responsiveness on both mobile, tablet and desktop.
 2. Routes to articles looks good aswell, good readability with nice lineheights and font sizes.
 3. On any given article route at desktop width, a white border appear above the article sidebar with greater height than width dividing the main article and sidebar, not sure if intended or not?
