@@ -47,6 +47,10 @@ a img:hover {
     opacity: 0.8;
 }
 
+.red {
+    color: var(--primary-color);
+}
+
 .container {
     max-width: 90%;
     margin: 0 auto;
